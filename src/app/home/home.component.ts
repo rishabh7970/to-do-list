@@ -2,8 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
-
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,10 +13,14 @@ import { FormsModule, NgForm } from '@angular/forms';
 export class HomeComponent implements OnInit{
   taskArray = [{taskName: 'Brush teeth', isCompleted: false}]
   
-  constructor(){ }
+  
 
   ngOnInit(): void {
     
+  }
+
+  constructor() { 
+
   }
 
   OnSubmit(form: NgForm){
